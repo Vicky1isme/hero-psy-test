@@ -26,7 +26,7 @@ export default function ResultPage() {
             psyState.score < 6 &&
             <>
               <Image src={result1} alt='result1' />
-              <div className='text-center text-2xl font-bold text-[#8F5FE8] my-4'>雷神索爾<br/><span className='text-base font-normal'>Thor</span></div>
+              <div className='text-center text-2xl font-bold text-[#8F5FE8] my-4'>雷神索爾</div>
             </>
           }
 
@@ -34,7 +34,7 @@ export default function ResultPage() {
             (psyState.score >= 6 && psyState.score < 8) &&
             <>
               <Image src={result2} alt='result2' />
-              <div className='text-center text-2xl font-bold text-[#BFA14A] my-4'>綠巨人<br/><span className='text-base font-normal'>Hulk</span></div>
+              <div className='text-center text-2xl font-bold text-[#BFA14A] my-4'>綠巨人</div>
             </>
           }
 
@@ -42,7 +42,7 @@ export default function ResultPage() {
             psyState.score >= 8 &&
             <>
               <Image src={result3} alt='result3' />
-              <div className='text-center text-2xl font-bold text-[#7B2235] my-4'>超人<br/><span className='text-base font-normal'>Superman</span></div>
+              <div className='text-center text-2xl font-bold text-[#7B2235] my-4'>超人</div>
             </>
           }
 

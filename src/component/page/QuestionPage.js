@@ -71,7 +71,7 @@ export default function QuestionPage({questionIndex, nextStep}) {
 
             <div
               className={
-                questionIndex === 0 ? 'text-[#8F5FE8] border-2 border-[#8F5FE8] rounded-full w-[48px] h-[48px] flex justify-center items-center font-bold text-xl' :
+                questionIndex === 0 ? 'text-[#0057B8] border-2 border-[#0057B8] rounded-full w-[48px] h-[48px] flex justify-center items-center font-bold text-xl' :
                 questionIndex === 1 ? 'text-[#BFA14A] border-2 border-[#BFA14A] rounded-full w-[48px] h-[48px] flex justify-center items-center font-bold text-xl' :
                 'text-[#7B2235] border-2 border-[#7B2235] rounded-full w-[48px] h-[48px] flex justify-center items-center font-bold text-xl'
               }
@@ -82,14 +82,14 @@ export default function QuestionPage({questionIndex, nextStep}) {
 
             <div
               className={
-                questionIndex === 0 ? 'text-center font-bold text-3xl text-[#8F5FE8] mb-2' :
+                questionIndex === 0 ? 'text-center font-bold text-3xl text-[#0057B8] mb-2' :
                 questionIndex === 1 ? 'text-center font-bold text-3xl text-[#BFA14A] mb-2' :
                 'text-center font-bold text-3xl text-[#7B2235] mb-2'
               }
             >
-              {questionIndex === 0 && <><span>如果你突然獲得一種超能力，你最希望是？</span><br/><span className='text-base font-normal'>If you could suddenly gain a superpower, which would you want most?</span></>}
-              {questionIndex === 1 && <><span>遇到危險時，你的第一反應是？</span><br/><span className='text-base font-normal'>When facing danger, what is your first reaction?</span></>}
-              {questionIndex === 2 && <><span>如果你是團隊的一員，你會？</span><br/><span className='text-base font-normal'>If you are part of a team, what would you do?</span></>}
+              {questionIndex === 0 && <>如果你突然獲得一種超能力，你最希望是？</>}
+              {questionIndex === 1 && <>遇到危險時，你的第一反應是？</>}
+              {questionIndex === 2 && <>如果你是團隊的一員，你會？</>}
             </div>
 
 
@@ -98,7 +98,7 @@ export default function QuestionPage({questionIndex, nextStep}) {
                 <div
                   className={
                     (questionIndex === 0
-                      ? 'bg-[#E5D6FA] text-[#8F5FE8] shadow-[0px_4px_0px_1px_#8F5FE8]'
+                      ? 'bg-[#B3D4F7] text-[#0057B8] shadow-[0px_4px_0px_1px_#0057B8]'
                       : questionIndex === 1
                       ? 'bg-[#F6EFD6] text-[#BFA14A] shadow-[0px_4px_0px_1px_#BFA14A]'
                       : 'bg-[#F5D1D6] text-[#7B2235] shadow-[0px_4px_0px_1px_#7B2235]')
@@ -107,15 +107,15 @@ export default function QuestionPage({questionIndex, nextStep}) {
                   onClick={() => clickAnswer(option)}
                   key={questionIndex + '-' + index}
                 >
-                  {questionIndex === 0 && index === 0 && <><span>能飛天遁地，想去哪就去哪</span><span className='text-xs font-normal'>(Fly anywhere you want)</span></>}
-                  {questionIndex === 0 && index === 1 && <><span>擁有無敵力量，保護所有人</span><span className='text-xs font-normal'>(Have invincible strength and protect everyone)</span></>}
-                  {questionIndex === 0 && index === 2 && <><span>讀心術，洞悉一切秘密</span><span className='text-xs font-normal'>(Read minds and know all secrets)</span></>}
-                  {questionIndex === 1 && index === 0 && <><span>衝上前保護朋友，自己來扛</span><span className='text-xs font-normal'>(Rush forward to protect friends, take it on yourself)</span></>}
-                  {questionIndex === 1 && index === 1 && <><span>冷靜分析，想出最佳對策</span><span className='text-xs font-normal'>(Analyze calmly and find the best solution)</span></>}
-                  {questionIndex === 1 && index === 2 && <><span>用幽默化解尷尬，讓大家安心</span><span className='text-xs font-normal'>(Use humor to ease tension and reassure everyone)</span></>}
-                  {questionIndex === 2 && index === 0 && <><span>當領袖，帶領大家前進</span><span className='text-xs font-normal'>(Be the leader and lead everyone forward)</span></>}
-                  {questionIndex === 2 && index === 1 && <><span>默默支援，讓團隊更強大</span><span className='text-xs font-normal'>(Support quietly and make the team stronger)</span></>}
-                  {questionIndex === 2 && index === 2 && <><span>提供創意點子，讓任務更有趣</span><span className='text-xs font-normal'>(Offer creative ideas to make the mission more fun)</span></>}
+                  {questionIndex === 0 && index === 0 && <>能飛天遁地，想去哪就去哪</>}
+                  {questionIndex === 0 && index === 1 && <>擁有無敵力量，保護所有人</>}
+                  {questionIndex === 0 && index === 2 && <>讀心術，洞悉一切秘密</>}
+                  {questionIndex === 1 && index === 0 && <>衝上前保護朋友，自己來扛</>}
+                  {questionIndex === 1 && index === 1 && <>冷靜分析，想出最佳對策</>}
+                  {questionIndex === 1 && index === 2 && <>用幽默化解尷尬，讓大家安心</>}
+                  {questionIndex === 2 && index === 0 && <>當領袖，帶領大家前進</>}
+                  {questionIndex === 2 && index === 1 && <>默默支援，讓團隊更強大</>}
+                  {questionIndex === 2 && index === 2 && <>提供創意點子，讓任務更有趣</>}
                 </div>
               ))
             }
